@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=49a4f0f1-d94b-46e7-bc3f-c059bbbe376f&lang=ru_RU"></script>
+    
+</head>
+<body>
+
+    <div id="map">
+        <div id="ymap"></div>
+    </div>
+    <div class="menu"  id="menu-container">
+        <div class="sight-card">
+            <img class="imgs" src="img/mountain.jpg" alt="Машук">
+            <div class="sight_text">
+                <h4 id="Mashuk">Гора Машук</h4>
+                <p>Машук – гора, расположенная в северо-восточной части Пятигорска. Она возвышается на 993 метра и считается памятником природы</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Arf.jpg" alt="Арфа">
+            <div class="sight_text">
+                <h4 id="Arfa">Эолова Арфа</h4>
+                <p>Прогуливаясь по направлению к Михайловскому отрогу горы Машук, можно увидеть красивую ротонду, которая имеет романтичное название «Эолова арфа».</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Grot_Diani.jpg" alt="Грот Дианы и Лермонтова">
+            <div class="sight_text">
+                <h4 id="Grot">Грот Дианы и Лермонтова</h4>
+                <p>Внимания туристов, побывавших в Пятигорске, заслуживают два грота: Дианы и Лермонтова. Они имеют разное происхождение.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/place_duel_Lermontov.jpg" alt="Место дуэли М. Ю. Лермонтова">
+            <div class="sight_text">
+                <h4 id="Duel">Место дуэли М. Ю. Лермонтова</h4>
+                <p>Одним из памятных исторических уголков, которые можно посмотреть в Пятигорске, является предполагаемое место дуэли М.Ю. Лермонтова и Н.С. Мартынова. </p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Proval.jpg" alt="Озеро Провал">
+            <div class="sight_text">
+                <h4 id="Ozero">Озеро Провал</h4>
+                <p>Озеро Провал – природная достопримечательность, которая расположена на горе Машук.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Canatnaya_doroga.jpg" alt="Канатная дорога">
+            <div class="sight_text">
+                <h4 id="Canat">Канатная дорога</h4>
+                <p>Канатная дорога появилась в Пятигорске в 1971 году. Ее уникальность в том, что на всем своем протяжении ее не поддерживают промежуточные опоры.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Sun_sity.jpg" alt="Аквапарк Город Солнца">
+            <div class="sight_text">
+                <h4 id="Aquapark">Аквапарк 'Город Солнца'</h4>
+                <p>Этот аквапарк находится в поселке Иноземцево – одном из популярных курортов Кавказских Минеральных Вод.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Verhniy_rinok.jpg" alt="Верхний рынок">
+            <div class="sight_text">
+                <h4 id="Rinok">Верхний рынок</h4>
+                <p>Самый старый рынок Пятигорска тоже можно считать одной из достопримечательностей курорта.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Musei_Lermontov.jpg" alt="Музей-заповедник М.Ю. Лермонтова">
+            <div class="sight_text">
+                <h4 id="Musei">Музей-заповедник М.Ю. Лермонтова</h4>
+                <p>Музей-заповедник М.Ю. Лермонтова создан на основе дома, где опальный поэт провел последние месяцы своей жизни, и куда было привезено его тело после дуэли.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Teatr_operetti.jpg" alt="Ставропольский Государственный Краевой Театр Оперетты">
+            <div class="sight_text">
+                <h4 id="Teatr">Театр Оперетты</h4>
+                <p>Здание Театра оперетты было возведено в Пятигорске по проекту архитектора А.И. Кузнецова более века назад, в 1915 году.  </p>
+                </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Park_cventnic.jpg" alt="Парк Цветник">
+            <div class="sight_text">
+                <h4 id="Cvetnik">Парк Цветник</h4>
+                <p>В том месте, где отроги горы Машук спускаются к проспекту Кирова, в Пятигорске расположен парк «Цветник».</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/park_kirova.jpg" alt="Парк Кирова">
+            <div class="sight_text">
+                <h4 id="Kirova">Парк Культуры и Отдыха имени Кирова</h4>
+                <p>Это популярное место семейного отдыха расположено в центральной части Пятигорска.</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Beshtau.jpg" alt="Гора Бештау">
+            <div class="sight_text">
+                <h4 id="Beshtau">Гора Бештау</h4>
+                <p>Название этой горы переводится с тюркского языка как «пять гор».</p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Academi_galery.jpg" alt="Академическая галерея">
+            <div class="sight_text">
+                <h4 id="Galery">Академическая галерея</h4>
+                <p>Белоснежное здание Академической галереи, расположенное в отрогах горы Машук, видно практически из любого уголка города. </p>
+            </div>
+        </div>
+        <div class="sight-card">
+            <img class="imgs" src="img/Sobor.jpg" alt="Спасский Собор">
+            <div class="sight_text">
+                <h4 id="Sobor">Спасский Собор</h4>
+                <p>Этот величественный храм наполняет гармонией городской ландшафт Пятигорска.</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div id="fullscreen-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image" style="max-width: 100%; max-height: 100%; margin: auto; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    </div>
+    <script src="zoom.js"></script>
+    <script src="script.js"></script>
+    <script src="ymapsCoord.js"></script>
+    <script src="swimMenu.js"></script>
+</body>
+</html>
